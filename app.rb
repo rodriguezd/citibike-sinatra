@@ -30,7 +30,6 @@ module Citibike
     end
 
     post '/map' do
-      # raise params.inspect
       @start = params[:start]
       @end = params[:end]
       erb :map
