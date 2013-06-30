@@ -5,4 +5,5 @@ gem 'multi_json'
 
 group :development do
   gem 'shotgun'
+  gem 'debugger'
 end

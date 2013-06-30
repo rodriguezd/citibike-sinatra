@@ -1,1 +1,5 @@
-<%= @data.inspect %>
+<% @data.each do |station| %>
+  <%= "#{station['name']}" %></br></br>
+  Lat: <%= "#{station['lat']}" %></br>
+  Lng: <%= "#{station['lng']}" %> </br><hr></br>
+<% end %>
