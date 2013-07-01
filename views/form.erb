@@ -4,7 +4,7 @@
 Start: </br></br>
 <select name="start">
   <% @data.each do |station|%>
-  <option value="<%= "[#{station['lat']/1000000.to_f}, #{station['lng']/1000000.to_f}]" %>"><%= "#{station['name']}" %></option>
+  <option value="<%= [station['lat']/1000000.to_f, station['lng']/1000000.to_f] %>"><%= station['name'] %></option>
   <% end %>
 </select>
 </br></br>
@@ -12,7 +12,7 @@ Start: </br></br>
 End: </br></br>
 <select name="end">
   <% @data.each do |station|%>
-  <option value="<%= "[#{station['lat']/1000000.to_f}, #{station['lng']/1000000.to_f}]" %>"><%= "#{station['name']}" %></option>
+  <option value="<%= [station['lat']/1000000.to_f, station['lng']/1000000.to_f] %>"><%= station['name'] %></option>
   <% end %>
 </select>
 
