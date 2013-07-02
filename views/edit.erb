@@ -1,0 +1,10 @@
+<form action="/stations/<%=@station.id%>" method="POST">
+  Name: <input type="text" name="station[stationName]" value=<%= @station.stationName %>></br>
+  Total Docks: <input type="text" name="station[totalDocks]" value=<%= @station.totalDocks %>></br>
+  Latitude: <input type="text" name="station[latitude]" value=<%= @station.latitude %>></br></br>
+  Longitude: <input type="text" name="station[longitude]" value=<%= @station.longitude %>></br>
+  Available Bikes:  <input type="text" name="station[availableBikes]" value=<%= @station.availableBikes %>></br>
+
+  <input type="submit">
+</form>
+<%= @station.stationName %>

@@ -1,0 +1,5 @@
+<form action="/stations/<%=@station.id%>" method="POST">
+<h3>Are you sure you want to delete <%= @station.stationName%>?</h3>
+<input type="hidden" name="_method" value="DELETE">
+
+<input type="submit" value="Delete">
